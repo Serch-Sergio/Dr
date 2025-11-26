@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Doctor Who</title>
+<body style="background-color: #1e2431;">
+
+<style>
+  body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+  }
+
+  header {
+    background-color: #e9e6d1;
+    text-align: center;
+    padding: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 222px;
+    color: #1e2431;
+  }
+
+  header h1 {
+    margin: 0;
+    font-size: 28px;
+  }
+
+  .content {
+    max-width: 900px;
+    margin: 60px auto;
+    text-align: center;
+    color: #a9a795;
+  }
+
+  .content h2 {
+    margin-bottom: 15px;
+    font-size: 22px;
+    color: #a9a795;
+  }
+
+  .content p {
+    max-width: 600px;
+    margin: 0 auto 40px;
+    font-size: 14px;
+    color: #a9a795;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: justify;
+  }
+
+  /* Galería de imágenes */
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px; /* separación uniforme en todas las direcciones */
+    justify-items: center;
+  }
+
+  .card {
+    position: relative;
+    width: 200px;
+    height: 250px;
+    border: 2px solid #d5d3b5;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 10px; /* bordes redondeados */
+    box-shadow: 0 0 15px rgba(0, 102, 255, 0.4); /* sombra azul */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 25px rgba(0, 102, 255, 0.6);
+  }
+
+  .card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: filter 0.3s ease;
+    border-radius: 10px;
+  }
+
+  /* Overlay (texto al hacer hover) */
+  .overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(224, 218, 192, 0.97);
+    color: #0e1014;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 20px;
+    box-sizing: border-box;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: 10px;
+  }
+
+  .overlay h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0 0 8px 0;
+  }
+
+  .overlay h4 {
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0 0 3px 0;
+  }
+
+  .overlay p {
+    font-size: 12px;
+    text-align: justify;
+    margin-top: 10px;
+  }
+
+  .card:hover img {
+    filter: brightness(300%) saturate(0%);
+  }
+
+  .card:hover .overlay {
+    opacity: 1;
+  }
+
+  @media (max-width: 768px) {
+    .gallery {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .gallery {
+      grid-template-columns: 1fr;
+      gap: 25px;
+    }
+  }
+</style>
+</head>
+<body>
+
+  <header>
+    <h1>DOCTOR WHO</h1>
+  </header>
+
+  <div class="content">
+    <h2>Era clásica</h2>
+    <p>La era clásica de Doctor Who se refiere a las primeras 26 temporadas, comenzando el 23 de noviembre de 1963 y terminando 6 de diciembre de 1989, protagonizada por los primeros siete Doctores. Se caracterizó por tener capítulos divididos en "seriales" que desarrollaban una trama a lo largo de varios episodios y fue un pilar de la ciencia ficción británica hasta su primer cancelación. </p>
+
+    <div class="gallery">
+         <!-- 1er Doctor-->
+      <div class="card">
+        <img src="IMG/1.png">
+        <div class="overlay">
+          <h3>1st. Doctor</h3>
+          <h4>William Hartnell</h4>
+          <h4>1963–1966</h4>
+          <p> Un anciano misterioso y autoritario, de mente brillante pero temperamento difícil, que descubre junto a sus compañeros el valor de la compasión y la aventura a través del tiempo y el espacio. </p>
+
+        </div></div>
+
+           <!-- 2do Doctor-->
+      <div class="card">
+        <img src="IMG/2.png">
+        <div class="overlay">
+          <h3>2nd. Doctor</h3>
+          <h4>Patrick Troughton</h4>
+          <h4>1966–1969</h4>
+          <p>De apariencia torpe y alegre, pero en realidad astuto e impredecible, usa su ingenio y humor para vencer a enemigos mucho más poderosos de lo que aparenta.</p>
+        </div></div>
+
+           <!-- 3er Doctor-->
+      <div class="card">
+        <img src="IMG/3.webp">
+        <div class="overlay">
+          <h3>3rd. Doctor</h3>
+          <h4>Jon Pertwee, </h4>
+          <h4>1970–1974</h4>
+          <p>Elegante, carismático y con alma de héroe de acción, trabaja con UNIT en la Tierra, enfrentando amenazas alienígenas con ciencia, gadgets y una fuerte convicción moral.</p>
+        </div></div>
+
+            <!-- 4tp Doctor-->
+      <div class="card">
+        <img src="IMG/4.webp">
+        <div class="overlay">
+          <h3>4th. Doctor</h3>
+          <h4>Tom Baker</h4>
+          <h4>1974-1981</h4>
+          <p>Excéntrico, impredecible y encantador, con una bufanda interminable y una mente genial, representa la encarnación más icónica del Doctor y su espíritu libre y rebelde.</p>
+        </div></div>
+      
+           <!-- 5to Doctor-->
+      <div class="card">
+        <img src="IMG/5.webp">
+        <div class="overlay">
+          <h3>5th. Doctor</h3>
+          <h4>Peter Davison</h4>
+          <h4>1982-1984</h4>
+          <p>Joven, sensible y profundamente humano, enfrenta dilemas éticos y tragedias con un sentido de responsabilidad que lo hace más vulnerable pero también más noble.</p>
+        </div></div>
+
+         <!-- 6to Doctor-->
+      <div class="card">
+        <img src="IMG/6.webp">
+        <div class="overlay">
+          <h3>6th. Doctor</h3>
+          <h4>Colin Baker</h4>
+          <h4>1984–1986</h4>
+          <p>De carácter fuerte y egocéntrico, con un traje tan colorido como su personalidad, combina arrogancia intelectual con una pasión intensa por la justicia y la vida.</p>
+        </div></div>
+
+        <!-- 7mo Doctor-->
+      <div class="card">
+        <img src="IMG/7.webp">
+        <div class="overlay">
+          <h3>7th. Doctor</h3>
+          <h4>Sylvester McCoy</h4>
+          <h4>1987-1989</h4>
+          <p>Con una fachada de bufón amable busca esconder su mente de estratega sombrío y manipulador, explorando el lado más misterioso y calculador del personaje.</p>
+        </div></div>
+                
+        <!-- 8vo Doctor-->
+      <div class="card">
+        <img src="IMG/8.webp">
+        <div class="overlay">
+          <h3>8th. Doctor</h3>
+          <h4>Paul McGann</h4>
+          <h4>Película 1996</h4>
+          <p>Romántico, poético y apasionado, combina la curiosidad científica del Doctor con una profunda conexión emocional hacia los humanos y el universo mismo.</p>
+        </div></div>
+
+         <!-- War Doctor-->
+      <div class="card">
+        <img src="IMG/WAR.webp">
+        <div class="overlay">
+          <h3>War Doctor</h3>
+          <h4>John Hurt</h4>
+          <h4>Especial 2013</h4>
+          <p>Una encarnación nacida del dolor y la guerra, forjada para luchar en la Guerra del Tiempo, que carga con la culpa de haber hecho lo impensable por salvar la realidad.</p>
+        </div></div>
+    </div>
+  </div>
+
+  <div class="content">
+    <h2>Era moderna</h2>
+    <p>La serie moderna es una continuación directa de la serie clásica, iniciada por el Noveno Doctor el 26 de marzo de2005 después de un especial de televisión en 1996 que incluyó al Octavo Doctor. Esta es considerada un buen punto de partida para los nuevos espectadores, ya que se puede empezar a ver sin tener que conocer la serie clásica anterior. La era moderna se distingue por la producción y efectos especiales actualizados, pero mantiene elementos clave como viajes en el tiempo y el espacio a través de la TARDIS. </p>
+
+    <div class="gallery">
+      <!-- 9no Doctor-->
+      <div class="card">
+        <img src="IMG/9.webp">
+        <div class="overlay">
+          <h3>9th Doctor</h3>
+          <h4>Christopher Eccleston</h4>
+          <h4>2005</h4>
+          <p>Cicatrizado por la guerra, sarcástico y lleno de culpa, busca redimirse salvando a otros, aprendiendo de nuevo a sonreír gracias a su compañera Rose Tyler.</p>
+        </div></div>
+
+         <!-- 10mo Doctor-->
+      <div class="card">
+        <img src="IMG/10.webp">
+        <div class="overlay">
+          <h3>10th Doctor</h3>
+          <h4>David Tennant</h4>
+          <h4>2005-2010</h4>
+          <p>Apasionado, encantador y trágico, muestra el Doctor más humano y emocional, alguien capaz de amar intensamente y sufrir con igual intensidad.</p>
+        </div></div>
+
+         <!-- 11vo Doctor-->
+      <div class="card">
+        <img src="IMG/11.webp">
+        <div class="overlay">
+          <h3>11th Doctor</h3>
+          <h4>Matt Smith</h4>
+          <h4>2010-2013</h4>
+          <p>Con energía infantil y sabiduría antigua, combina humor, tristeza y ternura, representando la dualidad entre la inocencia y el peso de siglos de vida.</p>
+        </div></div>
+
+        <!-- 12vo Doctor-->
+      <div class="card">
+        <img src="IMG/12.webp">
+        <div class="overlay">
+          <h3>12th Doctor</h3>
+          <h4>Peter Capaldi</h4>
+          <h4>2013-2017</h4>
+          <p>Un hombre cínico y reflexivo, pero con el corazon mas grande y amable de todos.  Es un Doctor que se cuestiona constantemente su propia moralidad, buscando comprender si todavía es una buena persona.</p>
+        </div></div>
+      
+      <!-- 13va Doctora-->
+      <div class="card">
+        <img src="IMG/13.webp">
+        <div class="overlay">
+          <h3>13th Doctor</h3>
+          <h4>Jodie Whittaker</h4>
+          <h4>2017-2022</h4>
+          <p>Brillante, entusiasta y compasiva, devuelve la esperanza al personaje mientras enfrenta el misterio más profundo sobre su verdadero origen.</p>
+        </div></div>
+     
+      <!-- 14vo Doctor-->
+      <div class="card">
+        <img src="IMG/WHO.webp">
+        <div class="overlay">
+          <h3>Fugitive Doctor</h3>
+          <h4>Jo Martin</h4>
+          <h4>2020-???</h4>
+          <p>Una encarnación oculta del pasado, firme, poderosa y enigmática, que sugiere que el origen del Doctor es mucho más antiguo y misterioso de lo que jamás imaginó.</p>
+        </div></div>
+    
+      <!-- 14vo Doctor-->
+      <div class="card">
+        <img src="IMG/14.png">
+        <div class="overlay">
+          <h3>14th Doctor</h3>
+          <h4>David Tennant</h4>
+          <h4>Especial 2023</h4>
+          <p>Una regeneración que mezcla nostalgia por el decimo Doctor y madurez, consciente de sus errores pasados y determinado a reparar lo que una vez perdió.</p>
+        </div></div>
+    
+    <!-- 15vo Doctor-->
+      <div class="card"><img 
+        src="IMG/15.png">
+        <div class="overlay">
+          <h3>15th Doctor</h3>
+          <h4>Ncuti Gatwa</h4>
+          <h4>2023-2025</h4>
+          <p>Hermoso, magnético, audaz y emocionalmente abierto, redefine al Doctor con una energía vibrante, combinando humor, empatía y un estilo deslumbrante.</p>
+        </div></div>
+    
+    <!-- BAD WOLF Doctor-->
+      <div class="card">
+        <img src="IMG/WHOOOO.png">
+        <div class="overlay">
+          <h3>?? DOCTOR</h3>
+          <h4>Billie Piper</h4>
+          <h4>2025</h4>
+          <p>A̸̮̥̤̒̌̇̄ p̴̘͍̣͍̍͊̂͊̍e҉̟͖̙̄̍̐̓ͅs̷̬̝̆̌̍͗a҉̜̝̖̖̒͂̀ͅr̷͙̝̪͙̔̿̎̊ d҉͉͕̝͐͑ḙ̴̣̆̅̄̈̚ l̷͖̣͉͓̊̐̆́a̴̯͙͊̔ r̵̲͙̗̱͛̔͌ͅe҉̝̲̳̤͍̈́̈́̄̈́g̵̗͖̘̎̅e̶̗̭̘͖̔͊̽̇ͅn̶͎͚̬̑͐ḙ̶̬̙̫͒̑̊͐ȑ̷͙̥͚̖͙͊́̂͆a̷̬̱͈͖͋̌̒̓c̵̤̫̃́ị̵͍̤̦̦̿̓̌ó҉̫͈̯̖̉̅̑̓̚n̸̜̪̣͒͑̓̈́̚,̵͉̘̭̘̀̃ l҉̙̟̝͗̾o̴̜͓̬̫̖̽̑͐ṣ̸̮͍̩̓͊ c̶̤͇͓̬̃̐r̵͎̝͌̄̐̃ͅé̶̤̣͊͋̒͑̍d̶͙̗̥̦͍̀̋i҈̭̬̝̠̀̿̈́̈́t̴͉̩̎̐̒̆o҉̞͕̝̭̔̑̆̔s̷̩̩̱̣̃̂̎̌͋ͅ d̸̗̬͈̝̓̔͆e̸̗̥͚̪̒̌l҈͎̲͔̞̅̃͐̓ e̴̤̟̣̠̮̍̆͆p҉̬̞́͋i҉͖͔̝̞̮̿̀s҈͈͎̗̖̎̋͑̋͋o҉̪̫̦̟͇̎̈͛ḋ̵̠͍̙̜̩͌̏̿̿ĭ̷̲͇͚̮́͛o̴̙̯̜͑̀̋̏̇ n҉͙͖̍͌̈́̌̓o̴̳̪̫̮̱͛̃̆͐ ľ̷͚̙̙̱̓͐́̎a̴̰̤͇̟͌͑ i̴̤̤̰͐̑̾d҈͇̞́͛̈́e҈̳̩̝̬́̄̔̌n̶̟̫̰̟̑̅̈̚t̵͚̪̮͕͓͋͐͐̈́̓i̷̱̯̲͛̒f̴̫̩̃͊̇ȋ̴͙̝̣̤͖́̈́̊c̴̳̳̩̰̐̇̐̋a̵̩̬̜͙̟͂̓̏̀n̴̝̱͍͖̪̍̐͛̈ c̸̰͉̆͌̑̅o҉̣̩̞͛͗̋̿́m̴͈͎̜̪̑͑̂o҉͚̣͚̪̟̉́͗̃̒ l̷͕̖̖͓̣͋̅ȃ̵̲̫̓̚ D̶̞̣͊̀ė̴̠̯̪̽͗c̵̩͍͙̳̖͊̾̐̃̒i̵͇̤̯̭͆̆ͅm҉̳͚̿̿͌̎o̶̭̖̙͛̀̄̿̂s҉̦͉̟͚̄͆̀̀e̴̦̯̙͖͋͒̑͒̇x̵͍͔̣̆́̓̌ͅt̸̤̱͚̣͆̈́̃̉ā̵̠͓̬̥̒ D҉̣̱͓̈́̊o҉̟̬̭͔̍̉̿̍́c̷͖̤͛̈́͗̚t̸͍͈̩́̒o̵͇͎̞̤͑̍͌r̶̪̟̰̈́̾̚a̴͔͖̗͌̎̀̄,̸̭͚̀͆ g̸̗̥͎̀̐̌̽̈ě̷͔͔͇̯̽̀n̴̞̝̣͉̯̄̊̌̊e҉̜̜̩͓̓̓͆͋r҉͖͈͇͆͗͋̿̓a̴͔̘̠̮͌̏n̷̥̫̣̓̈d̸̫̖̎̒͋̃o̵͓͙̟̓̒̀ ṁ̶̙̳̜͇͑̒̄u҈͙̱̗̬̓̊̽c҉̣͔̜͈̗͆̒h̸̠̘̆͛̚a҉̞͍͎̲͌͐ͅs̶̫͎̭̙͕͆͊̍̅̊ c҈̜̘͔̯̭̾́̋u҉̙̗̣͒͆͂ẽ̷̱͙̳͙͔̋s̵̤̥̞͙͋̈́̚ṭ̸͓͂̿̃̄͌i̵̟͎͕̽̔̒͊̚o̴͔̬̟͂͋͊̔͐n҈͉̗̤̰͉͊̎̏̎e҈̯̯̖͚͋̔͒s̸͕̝̲̳̳̔͛̀͛ s̸̜̙͔̏̂̊õ̴͚̱̣̘̆͒̔͌ͅb҈̦̰͑́r̴̞͈̰̟͆̑e҉̣̝̭̲̮̈́́̓̉̑ l̴̪̜̝̑̈́̿͆à̵̞̖̀ v҈̩͙͖͐́e҈̰̯͆̿̽r҈̘̗̰̪̐̓̀d̷̯̜̙͑͂̆ạ̷͍̩̣̊̓d҈̯̘̒̄̆e̵̬̲͉̳͗̿ȑ̴̥̬̥̓̍̄̽a̶̳̯̝̙̫͑̀̚ n̸̪̗̒̎̆̏ͅa҈̥̭͑̋t̷͉͈͙̦̾̿̅̈̀ṳ̷̬͔͆̅̾͑̈́r̵͕̪̣̫͒̂͂̈́̚ͅa҈̜̰͊̚l҉̝͈̫̠̰̄̾e҈̯̳̱͑̽z҈̥͓͍͕̈́̀̒à̵͖͈̟̃́̾ d҈̝͙͍̲̩̔͂ȅ̵̯̙͙͕͈̏͑̀̈ s̷̟̩̭̮̈́̌ụ̴͓͉͛̔̑̎ p̷͈͓̩͋̋ë̵̫͕͇́̀̚r̶̯͙̗͛̐̒s̴͈͇͇͍̊́o̸̯̥͊͒͒̌n̴͕̦̩͌̈́̔͆̅à̴͕͎̪͐j̵̘̩̏̊́̾e҈͈̖͚̮͊̆̓̃ͅ.̸͓͔̘̆̌̓̂</p>
+        </div></div>
+    </div>
+  </div>
+
+</body>
+</html>
